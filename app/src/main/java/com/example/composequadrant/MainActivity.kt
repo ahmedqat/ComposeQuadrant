@@ -46,12 +46,13 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun TextQuad(text_title: String, text_info: String, bg: Color,modifier: Modifier = Modifier){
     Column (
+
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
             .fillMaxSize()
             .background(bg)
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+            .padding(16.dp)
              ){
         Text(
             text = text_title,
